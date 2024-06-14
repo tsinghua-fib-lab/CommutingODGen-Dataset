@@ -5,11 +5,7 @@ from collections import defaultdict
 import numpy as np
 from scipy.stats import entropy
 
-import matplotlib.pyplot as plt
-
 import torch
-
-from pprint import pprint
 
 
 

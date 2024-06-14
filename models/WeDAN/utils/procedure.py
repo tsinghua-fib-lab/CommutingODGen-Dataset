@@ -8,8 +8,6 @@ import argparse
 import numpy as np
 import torch
 
-from pprint import pprint
-
 
 def getoneGPUMem():
     gpu_status = os.popen('nvidia-smi | grep %').read().split('|')

@@ -154,8 +154,41 @@ We construct the OD matrices for all areas using data on commuting patterns from
 
 ## 2. Benchmark Experiments
 
+### Prerequisites
+
+To conduct the benchmark experiments, users should first prepare a Python environment containing the necessary libraries. 
+
+To conduct the experiments, ensure you have the following setup:
+
+- **Python Version:** Python 3.8
+
+- **Required Libraries:**
+  - `numpy`
+  - `scikit-learn==1.3.0`
+  - `torch==2.1.0+cu118`
+  - `scipy==1.10.1`
+  - `dgl==1.1.2+cu117`
+  - `networkx==3.1`
+  
+Please install or update these libraries to match the specified versions for optimal compatibility.
+
+### Run Experiments
+
 The code for the benchmark experiments is stored in the `./model/*` directory. Each model-specific folder contains a `main.py` file, which serves as the entry point for executing the benchmark experiment. To run a specific benchmark experiment, simply execute the `main.py` file directly.
 
+To run the model, follow these specific steps:
+1. **Navigate to the Project Root Directory:**
+   
+   Use the `cd` command to change into the project's root directory.
+   ```bash
+   cd path_to_this_proj
+   ```
+2. **Execute the Model Script:**
+   
+   Run the `main.py` file located in the WeDAN model directory `./WeDAN` by using the following command:
+   ```bash
+   python WeDAN/main.py
+   ```
 **The experimental results are shown as follows.**
 
 | Model    | CPC   | RMSE  | NRMSE | inflow | outflow | ODflow |
@@ -170,3 +203,25 @@ The code for the benchmark experiments is stored in the `./model/*` directory. E
 | NetGAN   | 0.487 | 89.1  | 1.138 | 0.429  | 0.354   | 0.191  |
 | DiffODGen| 0.532 | 74.6  | 0.953 | 0.324  | 0.270   | 0.149  |
 | WeDAN    | 0.593 | 68.6  | 0.876 | 0.291  | 0.269   | 0.147  |
+
+
+### Extra Usage of This Dataset
+
+To validate your model using this dataset, you can utilize existing scripts for data loading and performance evaluation. Follow these steps to set up and execute your experiments:
+
+1. **Create a Directory for Your Model**:
+   
+   Prepare a folder to house your model experiments:
+   ```bash
+   mkdir ./name_of_your_model
+   ```
+2. **Write Your Model and Entry Script:**
+    - Develop your own `model.py` to describe your model.
+    - Create a `main.py` to serve as the entry point of your experiment. This script should reuse the existing `data_load.py` and `metrics.py`:
+3. **Execute Your Model:**
+   
+   Navigate to the project root directory and run your model:
+   ```bash
+   cd path_to_this_proj
+   python ./name_of_your_model/main.py
+   ```

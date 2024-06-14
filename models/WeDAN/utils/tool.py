@@ -10,7 +10,6 @@ import numpy as np
 from sklearn.preprocessing import MinMaxScaler
 from scipy.stats import boxcox
 from scipy.special import inv_boxcox
-# from pylab import *
 
 import torch
 import dgl

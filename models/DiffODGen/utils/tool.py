@@ -4,7 +4,6 @@ import os
 import sys
 import random
 from pprint import pprint
-from random import shuffle
 
 from scipy.stats import boxcox
 from scipy.special import inv_boxcox

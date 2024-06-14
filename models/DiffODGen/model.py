@@ -1,5 +1,4 @@
 from copy import deepcopy
-import os
 
 import math
 
@@ -12,7 +11,7 @@ from torch.cuda.amp import autocast
 
 from tqdm import tqdm
 from dgl.nn import GATConv
-from utils.tool import get_named_beta_schedule, timestep_embedding, node_feat_from_adj, MarginalUniformTransition, DiscreteUniformTransition, compute_over0_posterior_distribution
+from utils.tool import get_named_beta_schedule, timestep_embedding, node_feat_from_adj, DiscreteUniformTransition, compute_over0_posterior_distribution
 
 
 

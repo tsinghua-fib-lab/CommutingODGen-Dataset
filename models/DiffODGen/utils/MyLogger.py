@@ -3,7 +3,6 @@ import json
 from copy import deepcopy
 import numpy as np
 import torch
-from torch.utils.tensorboard import SummaryWriter
 
 from utils.metrics import accuracy
 

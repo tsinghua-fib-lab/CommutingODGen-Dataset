@@ -3,11 +3,9 @@ import warnings
 warnings.filterwarnings("ignore")
 
 import torch
-import torch.nn.functional as F
 from torch.optim.lr_scheduler import StepLR
 
 from tqdm import tqdm
-from pprint import pprint
 
 from utils.tool import *
 from utils.metrics import *
