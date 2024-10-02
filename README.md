@@ -1,6 +1,6 @@
 # A Large-scale Dataset for Commuting OD Matrix Generation
 
-This is the official repository of the submission of NeurIPS 2024 D&B Track paper *A Large-scale Benchmark Dataset for Commuting Origin-destination Matrix Generation*. This dataset consists of a total count of 3,233 areas around the United States, using counties as area boundaries and census tracts as region units in the corresponding area, each area including its regional spatial characteristics and commuting OD matrix.
+This dataset consists of a total count of 3,233 areas around the United States, using counties as area boundaries and census tracts as region units in the corresponding area, each area including its regional spatial characteristics and commuting OD matrix.
 
 <img src='assets/framework.png' width='780px'>
 <img src='assets/img.png' width='780px'>
